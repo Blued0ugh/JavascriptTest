@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="hello">버튼을 눌러주세요.</h1>
+    <button onclick="hello()" >환영 버튼</button>
+    <script>
+        let name = prompt("이름을 입력하세요");
+
+        function hello()
+        {
+            document.getElementById("hello").innerHTML=(name+"님, 만나서 반가워요.");
+        }
+    </script>
+    
+</body>
+</html>

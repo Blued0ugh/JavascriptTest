@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 >합 계산하기</h1>
+    <h2 id="test" style="background-color: dimgrey; color: blanchedalmond;">버튼을 눌러 합을 구해보세요</h1>
+
+    <button onclick="ahh()" style="background-color: rgb(172, 172, 172); color: blanchedalmond;">계산 결과</button>
+    <button onclick="getmore()" style="background-color: rgb(172, 172, 172); color: blanchedalmond;"> 숫자 입력하기</button>
+    <script>
+
+let x=parseInt(prompt("더할 숫자 하나를 입력하세요"));
+let y=parseInt(prompt("더할 숫자 하나를 입력하세요"));
+let z=x+y;
+
+function ahh()
+{
+    document.getElementById("test").innerHTML=("합은 "+z+" 입니다.");
+}
+function getmore()
+{
+    let x=parseInt(prompt("더할 숫자 하나를 입력하세요"));
+let y=parseInt(prompt("더할 숫자 하나를 입력하세요"));
+let z=x+y;
+document.getElementById("test").innerHTML=("합은 "+z+" 입니다.");
+}
+</script>
+</body>
+</html>

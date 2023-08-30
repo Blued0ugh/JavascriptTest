@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=10; //전역
+        let init =10000
+        const num1=123;
+        function add()
+        {
+            console.log(a);
+            console.log(init);
+            let b=20;
+            cnt=0;
+        }
+        const num1 =232; //코드 자체가 안ㄴ 돌아감
+        add();
+        console.log(cnt);
+                //consloe.log(b)->불가 참조도 불가 읽기 불가
+
+    </script>
+</body>
+</html>
